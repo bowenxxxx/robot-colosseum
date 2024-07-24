@@ -34,8 +34,8 @@ fi
 # idx from which to collect demos (use -1 for all idxs)
 IDX_TO_COLLECT=-1
 
-SAVE_PATH=$HOME/data/colosseum_dataset
-NUMBER_OF_EPISODES=1
+SAVE_PATH=/hkfs/work/workspace/scratch/ll6323-david_dataset/data/colosseum_data
+NUMBER_OF_EPISODES=100
 IMAGE_SIZE=(128 128)
 MAX_ATTEMPTS=20
 SEED=42
@@ -48,7 +48,7 @@ IMAGES_USE_POINTCLOUD="False"
 
 CAMERAS_USE_LEFT_SHOULDER="True"
 CAMERAS_USE_RIGHT_SHOULDER="True"
-CAMERAS_USE_OVERHEAD="False"
+CAMERAS_USE_OVERHEAD="True"
 CAMERAS_USE_WRIST="True"
 CAMERAS_USE_FRONT="True"
 
