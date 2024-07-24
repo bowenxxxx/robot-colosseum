@@ -51,6 +51,7 @@ class EnvironmentExt(Environment):
     ):
         # HACK: This is a workaround for the case of using RLBench from PerAct
         arg_count: int = len(inspect.signature(Environment.__init__).parameters)
+        arg_count = 13
         if arg_count == 12:
             # Using implementation from RLBench fork from PerAct
             super().__init__(
