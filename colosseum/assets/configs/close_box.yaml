@@ -1,18 +1,18 @@
 data:
   # Where to save the demos
-  save_path: /tmp/rlbench_data/
+  save_path:  /hkfs/work/workspace/scratch/ll6323-david_dataset/data/colosseum_data/
   # The size of the images to save
   image_size: [128, 128]
   # The renderer to use. Either opengl or opengl3. The first has no shadows
   renderer: opengl3
   # The number of episodes to collect per task
-  episodes_per_task: 5
+  episodes_per_task: 100
   # The image types that will be recorded
   images:
     rgb: True
-    depth: True
-    mask: True
-    point_cloud: True
+    depth: False
+    mask: False
+    point_cloud: False
   # The cameras that we will be enabled
   cameras:
     left_shoulder: True

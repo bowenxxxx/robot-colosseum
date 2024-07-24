@@ -6,7 +6,7 @@ data:
   # The renderer to use. Either opengl or opengl3. The first has no shadows
   renderer: opengl3
   # The number of episodes to collect per task
-  episodes_per_task: 150
+  episodes_per_task: 100
   # The image types that will be recorded
   images:
     rgb: True
