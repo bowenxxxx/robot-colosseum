@@ -1,6 +1,6 @@
 data:
   # Where to save the demos
-  save_path:  /hkfs/work/workspace/scratch/ll6323-david_dataset/data/colosseum_data/
+  save_path: /hkfs/work/workspace/scratch/ll6323-david_dataset/data/colosseum_data/
   # The size of the images to save
   image_size: [128, 128]
   # The renderer to use. Either opengl or opengl3. The first has no shadows
