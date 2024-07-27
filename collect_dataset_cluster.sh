@@ -35,14 +35,14 @@ fi
 IDX_TO_COLLECT=-1
 
 SAVE_PATH=/hkfs/work/workspace/scratch/ll6323-david_dataset/data/colosseum_data
-NUMBER_OF_EPISODES=100
+NUMBER_OF_EPISODES=1
 IMAGE_SIZE=(128 128)
 MAX_ATTEMPTS=20
 SEED=42
 USE_SAVE_STATES="True"
 
 IMAGES_USE_RGB="True"
-IMAGES_USE_DEPTH="True"
+IMAGES_USE_DEPTH="False"
 IMAGES_USE_MASK="False"
 IMAGES_USE_POINTCLOUD="False"
 
@@ -55,7 +55,7 @@ CAMERAS_USE_FRONT="True"
 for task in "${tasks[@]}"
 do
     echo "Processing task: $task"
-    python -m colosseum.tools.dataset_generator --config-name $task \
+    python -m colosseum.tools.collect_demo --config-name $task \
             env.seed=$SEED \
             data.save_path=$SAVE_PATH \
             +data.max_attempts=$MAX_ATTEMPTS \
