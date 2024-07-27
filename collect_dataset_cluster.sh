@@ -35,7 +35,7 @@ fi
 IDX_TO_COLLECT=-1
 
 SAVE_PATH=/hkfs/work/workspace/scratch/ll6323-david_dataset/data/colosseum_data
-NUMBER_OF_EPISODES=1
+NUMBER_OF_EPISODES=100
 IMAGE_SIZE=(128 128)
 MAX_ATTEMPTS=20
 SEED=42
