@@ -23,7 +23,7 @@ if [ $# -eq 0 ]
 #           "place_wine_at_rack_location"
 #           "insert_onto_square_peg"
 #           "stack_cups"
-           "turn_oven_on"
+#           "turn_oven_on"
            "straighten_rope"
            "setup_chess"
            "scoop_with_spatula")
