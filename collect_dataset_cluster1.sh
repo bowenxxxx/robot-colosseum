@@ -37,7 +37,7 @@ fi
 # idx from which to collect demos (use -1 for all idxs)
 IDX_TO_COLLECT=-1
 
-SAVE_PATH=/hkfs/work/workspace/scratch/ll6323-david_dataset/data/colosseum_data
+SAVE_PATH=/hkfs/work/workspace/scratch/ll6323-david_dataset/data/colosseum
 NUMBER_OF_EPISODES=150
 IMAGE_SIZE=(128 128)
 MAX_ATTEMPTS=20
