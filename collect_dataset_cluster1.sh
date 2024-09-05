@@ -8,7 +8,7 @@ if [ $# -eq 0 ]
     echo "Collecting demos from all tasks"
 
     tasks=(
-          "basketball_in_hoop"
+#          "basketball_in_hoop"
            "close_box"
            "close_laptop_lid"
            "empty_dishwasher"

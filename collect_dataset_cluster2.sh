@@ -14,7 +14,7 @@ if [ $# -eq 0 ]
 #           "close_laptop_lid"
 #           "empty_dishwasher"
 #           "get_ice_from_fridge"
-           "hockey"
+#           "hockey"
            "meat_on_grill"
            "move_hanger"
            "wipe_desk"
