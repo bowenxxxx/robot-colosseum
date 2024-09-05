@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 export PYOPENGL_PLATFORM=opengl
 export DISPLAY=:0.0
+export  CUDA_VISIBLE_DEVICES=0
 
 if [ $# -eq 0 ]
   then
     echo "Collecting demos from all tasks"
 
     tasks=(
-#          "basketball_in_hoop"
-#           "close_box"
-#           "close_laptop_lid"
-#           "empty_dishwasher"
-#           "get_ice_from_fridge"
+          "basketball_in_hoop"
+           "close_box"
+           "close_laptop_lid"
+           "empty_dishwasher"
+           "get_ice_from_fridge"
 #           "hockey"
 #           "meat_on_grill"
 #           "move_hanger"
@@ -24,9 +25,10 @@ if [ $# -eq 0 ]
 #           "insert_onto_square_peg"
 #           "stack_cups"
 #           "turn_oven_on"
-           "straighten_rope"
-           "setup_chess"
-           "scoop_with_spatula")
+#           "straighten_rope"
+#           "setup_chess"
+#           "scoop_with_spatula"
+           )
 else
     echo "Collectins demos from task $1"
     tasks=("$1")
@@ -36,16 +38,16 @@ fi
 IDX_TO_COLLECT=-1
 
 SAVE_PATH=/hkfs/work/workspace/scratch/ll6323-david_dataset/data/colosseum_data
-NUMBER_OF_EPISODES=100
+NUMBER_OF_EPISODES=150
 IMAGE_SIZE=(128 128)
 MAX_ATTEMPTS=20
 SEED=42
 USE_SAVE_STATES="True"
 
 IMAGES_USE_RGB="True"
-IMAGES_USE_DEPTH="False"
-IMAGES_USE_MASK="False"
-IMAGES_USE_POINTCLOUD="False"
+IMAGES_USE_DEPTH="True"
+IMAGES_USE_MASK="True"
+IMAGES_USE_POINTCLOUD="True"
 
 CAMERAS_USE_LEFT_SHOULDER="True"
 CAMERAS_USE_RIGHT_SHOULDER="True"
